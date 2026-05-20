@@ -10,15 +10,23 @@ while contraseña.strip() != "Fabian19" and usuario.strip() != "FabianArias" and
     i+=1
 
 if contraseña == "Fabian19" and usuario == "FabianArias":
+    print("ACCESO CONCEDIDO ")
     while True:
-        print("INGRESA UN NUMERO PARA ENTRES A ESA FUNCION(1-4): ")
-        print(f"\n1.INVENTARIO DE LOS PRODUCTOS: ")
-        print(f"2.VENTAS DE LOS PRODUCTOS: ")
-        print(f"3.INGRESA QUE PRODUCTO ")
+        print("INGRESA UN NUMERO PARA USAR LA FUNCION(1-4): ")
+        print(f"\n 1.INVENTARIO DE LOS PRODUCTOS: ")
+        print(f" 2.VENTAS DE LOS PRODUCTOS: ")
+        print(f" 3.INGRESA QUE PRODUCTO ")
 
-        opcion=input("INGRESA UN NUMERO: ")
+        opcion=int(input("INGRESA UN NUMERO: "))
 
         if opcion == 1:
             print("listo")
+            break
+        elif opcion == 2:
+            print("No listo")
+            break
+        elif opcion == 3:
+            print("XD")
+            break
 else:
     print("bloqueado por 3 intentos")
