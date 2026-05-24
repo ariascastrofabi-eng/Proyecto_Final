@@ -18,7 +18,7 @@ if contraseña == "Fabian19" and usuario == "FabianArias":
         print(f" 3.INGRESA QUE PRODUCTO ")
         print(f"4.EDICION DE TEXTO DE LOS PRODUCTOS")
 
-        opcion=input("INGRESA UN NUMERO: ").strip().upper()
+        opcion=input("INGRESA UN NUMERO(1, 2, 3, 4) O ESCRIBA SALIR: ").strip().upper()
 
         if opcion == "1":
             print("listo")
