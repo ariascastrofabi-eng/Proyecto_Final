@@ -1,25 +1,30 @@
-print("BIENVENIDO AL MUNDO GAMING")
 print("="*60)
+print("BIENVENIDO AL MUNDO GAMING")
 usuario_registrado=""
 contraseña_registrado=""
 while True:
     print("="*60)
     print(f"\n1.CREAR CUENTA")
     print(f"2.INICIA SESION")
+    print("="*60)
 
     opcion1=input("INGRESA UN NUMERO:").strip()
     if opcion1 == "1":
+        print("="*60)
         print("CREA UNA CUENTA")
         print("="*60)
         usuario_registrado=input("INGRESA UN USUARIO NUEVA: ").strip()
         contraseña_registrado=input("INGRESA UNA CONTRASEÑA NUEVA: ").strip()
+        print("="*60)
         print("CREADO CON EXITO")
     elif opcion1 == "2":
         if usuario_registrado == "" or contraseña_registrado == "":
             print("="*60)
             print("no hay registrado en el sistema")
             continue
+        print("="*60)
         print("INICIA SESION")
+        print("="*60)
         intentos=3
         i = 1
         usuario=input("INGRESA EL NOMBRE DE USUARIO: ")
@@ -30,8 +35,8 @@ while True:
             contraseña=input("Ingresa la contraseña correcta: ").strip()
             i+=1
         if contraseña == contraseña_registrado and usuario == usuario_registrado:
-            print("ACCESO CONCEDIDO ")
             print("="*60)
+            print("ACCESO CONCEDIDO ")
             while True:
                 print("="*60)
                 print("INGRESA UN NUMERO PARA USAR LA FUNCION(1-4): ")
@@ -44,19 +49,19 @@ while True:
                 opcion=input("INGRESA UN NUMERO(1, 2, 3, 4) O ESCRIBA SALIR: ").strip().upper()
 
                 if opcion == "1":
-                    print("listo")
+                    print("\nlisto")
                     input("INGRESA ENTER PARA VOLVER AL MENU")
                 elif opcion == "2":
-                    print("No listo")
+                    print("\nNo listo")
                     input("INGRESA ENTER PARA VOLVER AL MENU")
                 elif opcion == "3":
-                    print("XD")
+                    print("\nXD")
                     input("INGRESA ENTER PARA VOLVER AL MENU")
                 elif opcion == "4":
-                    print("HOLA")
+                    print("\nHOLA")
                     input("INGRESA ENTER PARA VOLVER AL MENU")
                 elif opcion == "SALIR":
-                    print("Saliendo del sistema......")
+                    print("\nSaliendo del sistema......")
                     break
                 else:
                     print("solo los numeros 1,2,3,4 o salir")
