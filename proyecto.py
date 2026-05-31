@@ -147,7 +147,7 @@ while True:
                                     precio_compra=precio_adquirido
                                     stock_1=cantidad_pro
 
-                                print(f"NUESTRA CAJA AHORA TIENE AHORA {caja} BS")
+                                print(f"'COMPRADO CON EXITO' NUESTRA CAJA AHORA TIENE AHORA {caja} BS")
                             else:
                                 print("=======SALDO INSUFICIENTE=======")
 
@@ -170,7 +170,7 @@ while True:
                                     precio_compra1=precio_adquirido1
                                     precio_venta1=precio_registrado1
                                     stock_2=cantidad_pro1
-                                print(f"EN LA CAJA AHORA TENEMOS {caja}")
+                                print(f"'COMPRADO CON EXITO' EN LA CAJA AHORA TENEMOS {caja}")
                             else:
                                 print("=====SALDO INSUFICIENTE==========")
                         else:
