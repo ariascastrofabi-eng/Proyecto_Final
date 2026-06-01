@@ -137,16 +137,23 @@ while True:
                             precio_total=cantidad_pro*precio_adquirido #el total de cuanto voy a gastar para la compra del producto y disminuye la caja y si es igual entonces el producto se suma solo las cantidades
 
                             if caja >= precio_total:
+                                if precio_adquirido >= precio_registrado:
+                                    print("ESTARIAS PERDIENDO GANANCIAS ESTAS SEGURO DE ESO")
+                                    print("SI O NO")
+                                    opcion4=input("INGRESA UN SI O NO: ").strip().upper()
+                                    if opcion4 != "SI":
+                                        print("CANCELADO")
+                                        continue
                                 caja-=precio_total
                                 if producto_limpio == producto_1:
                                     stock_1+=cantidad_pro
+                                    precio_venta=precio_registrado
                                     print(f"LA CANTIDAD DE MI PRODUCTO {producto_1} es ahora de {stock_1}")
                                 else:
                                     producto_1=producto_limpio
                                     precio_venta=precio_registrado
                                     precio_compra=precio_adquirido
                                     stock_1=cantidad_pro
-
                                 print(f"'COMPRADO CON EXITO' NUESTRA CAJA AHORA TIENE AHORA {caja} BS")
                             else:
                                 print("=======SALDO INSUFICIENTE=======")
@@ -161,9 +168,18 @@ while True:
                             precio_total1=cantidad_pro1*precio_adquirido1
                             
                             if caja >= precio_total1:
+                                if precio_adquirido1 >= precio_registrado1:
+                                    print("ESTARIAS PERDIENDO GANANCIAS ESTAS SEGURO DE ESO")
+                                    print("INGRESA SI O NO")
+                                    opcion5=input("INGRESA UN SI O NO: ").strip().upper()
+                                    if opcion5 != "SI":
+                                        print("CANCELADO")
+                                        continue
                                 caja-=precio_total1
                                 if producto_limpio1 == producto_2:
+                                
                                     stock_2+=cantidad_pro1
+                                    precio_venta1=precio_registrado1
                                     print(f"LA CANTIDAD DE MI PRODUCTO {producto_2} es ahora de {stock_2}")
                                 else:
                                     producto_2=producto_limpio1
