@@ -130,8 +130,8 @@ while True:
                         if opcion3 == "1":
                             Producto_registrado=input("INGRESA EL NOMBRE DEL PRODUCTO DE UNA COMPUTADORA QUE VA ADQUIRIR: ").strip().upper()
                             producto_limpio=Producto_registrado.replace(" ","_")#esto es para que la variables agarren bien el nombre del producto de la computadora relacionado
-                            precio_adquirido=float(input("INGRESA EL PRECIO DE COMPRA DEl PRODUCTO: "))
-                            precio_registrado=float(input("INGRESA EL PRECIO PARA VENDER EL PRODUCTO: "))
+                            precio_adquirido=float(input("INGRESA EL PRECIO DE COMPRA DEl PRODUCTO(BS): "))
+                            precio_registrado=float(input("INGRESA EL PRECIO PARA VENDER EL PRODUCTO(BS): "))
                             cantidad_pro=int(input("INGRESA LA CANTIDAD QUE QUIERE PARA LA TIENDA: "))
 
                             precio_total=cantidad_pro*precio_adquirido #el total de cuanto voy a gastar para la compra del producto y disminuye la caja y si es igual entonces el producto se suma solo las cantidades
@@ -155,8 +155,8 @@ while True:
                         elif opcion3 == "2":
                             Producto_registrado1=input("INGRESA EL NOMBRE DEL PRODUCTO DE UNA COMPUTADORA QUE VA ADQUIRIR: ").strip().upper()
                             producto_limpio1=Producto_registrado1.replace(" ","_")
-                            precio_adquirido1=float(input("INGRESA EL PRECIO DE COMPRA DEl PRODUCTO: "))
-                            precio_registrado1=float(input("INGRESA EL PRECIO PARA VENDER EL PRODUCTO: "))
+                            precio_adquirido1=float(input("INGRESA EL PRECIO DE COMPRA DEl PRODUCTO(BS): "))
+                            precio_registrado1=float(input("INGRESA EL PRECIO PARA VENDER EL PRODUCTO(BS): "))
                             cantidad_pro1=int(input("INGRESA LA CANTIDAD QUE QUIERE PARA LA TIENDA: "))
                             precio_total1=cantidad_pro1*precio_adquirido1
                             
