@@ -20,8 +20,8 @@ while True:
     print(f"3.SALIR")
     print("="*60)
 
-    opcion1=input("INGRESA UN NUMERO:").strip()
-    if opcion1 == "1":
+    opcion1=input("INGRESA UN NUMERO: ").strip()
+    if opcion1 == "1": #PARA CREARME UNA CUENTA
         print("="*60)
         print("CREA UNA CUENTA")
         print("="*60)
@@ -37,7 +37,7 @@ while True:
             print("="*60)
             print("CREADO CON EXITO")
             print("="*60)
-    elif opcion1 == "2":
+    elif opcion1 == "2": #PARA INICIAR SESION
         if len(usuario_registrado) == 0:
             print("NO HAY REGISTRADO EN EL SISTEMA")
         else:
@@ -217,7 +217,7 @@ while True:
                 continue
             else:print("BLOQUEADO POR INTENTOS")
             break
-    elif opcion1 == "3":
+    elif opcion1 == "3": # ESTO ES PARA CERRAR EL SISTEMA
         break
     else:
         print("OPCION VALIDA 1,2 Y 3")
